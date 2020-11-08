@@ -9,6 +9,7 @@ import (
 	"encoding/xml"
 	"errors"
 	"fmt"
+	"github.com/gofiber/fiber/v2/internal/fwd"
 	"io"
 	"mime/multipart"
 	"net/http"
@@ -1022,6 +1023,39 @@ func (c *Ctx) Set(key string, val string) {
 
 func (c *Ctx) setCanonical(key string, val string) {
 	c.fasthttp.Response.Header.SetCanonical(utils.UnsafeBytes(key), utils.UnsafeBytes(val))
+}
+
+func (c *Ctx) Stream(step func(w io.Writer) bool) bool {
+	notify := c.fasthttp.Response.BodyWriter().(http.CloseNotifier).CloseNotify()
+
+	w:= fwd.NewWriter(c.fasthttp.Response.BodyWriter())
+	for {
+		select {
+		case <-notify:
+			return true
+		default:
+			keepOpen := step(w)
+
+			w.Flush()
+			if !keepOpen {
+				return false
+			}
+		}
+	}
+}
+
+func (c *Ctx) SendSSE(event , data string)  {
+	eventReplacer := strings.NewReplacer(
+		"\n", "\\n",
+		"\r", "\\r")
+	event = "event:"+eventReplacer.Replace(event)+"\n"
+	c.fasthttp.Response.BodyWriter().Write([]byte(event))
+
+	dataReplacer := strings.NewReplacer(
+		"\n", "\ndata:",
+		"\r", "\\r")
+	data = "data:"+dataReplacer.Replace(data)+"\n"
+	c.fasthttp.Response.BodyWriter().Write([]byte(data))
 }
 
 // Subdomains returns a string slice of subdomains in the domain name of the request.

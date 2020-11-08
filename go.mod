@@ -1,4 +1,4 @@
-module github.com/gofiber/fiber/v2
+module github.com/josiaranda/fiber
 
 go 1.14
 
