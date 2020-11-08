@@ -1,4 +1,4 @@
-module github.com/josiaranda/fiber
+module github.com/tiketdatajosiaranda/fiber
 
 go 1.14
 
