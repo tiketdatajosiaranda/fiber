@@ -3,7 +3,7 @@ package recover
 import (
 	"fmt"
 
-	"github.com/gofiber/fiber/v2"
+	"github.com/tiketdatajosiaranda/fiber"
 )
 
 // Config defines the config for middleware.

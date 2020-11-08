@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/gofiber/fiber/v2"
-	"github.com/gofiber/fiber/v2/utils"
+	"github.com/tiketdatajosiaranda/fiber"
+	"github.com/tiketdatajosiaranda/fiber/utils"
 	"github.com/valyala/fasthttp"
 )
 

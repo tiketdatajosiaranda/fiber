@@ -9,9 +9,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/gofiber/fiber/v2/utils"
+	"github.com/tiketdatajosiaranda/fiber/utils"
 
-	"github.com/gofiber/fiber/v2"
+	"github.com/tiketdatajosiaranda/fiber"
 	"github.com/valyala/fasthttp"
 )
 

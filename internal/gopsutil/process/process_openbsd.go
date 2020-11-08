@@ -13,10 +13,10 @@ import (
 	"strings"
 	"unsafe"
 
-	"github.com/gofiber/fiber/v2/internal/gopsutil/common"
-	cpu "github.com/gofiber/fiber/v2/internal/gopsutil/cpu"
-	mem "github.com/gofiber/fiber/v2/internal/gopsutil/mem"
-	net "github.com/gofiber/fiber/v2/internal/gopsutil/net"
+	"github.com/tiketdatajosiaranda/fiber/internal/gopsutil/common"
+	cpu "github.com/tiketdatajosiaranda/fiber/internal/gopsutil/cpu"
+	mem "github.com/tiketdatajosiaranda/fiber/internal/gopsutil/mem"
+	net "github.com/tiketdatajosiaranda/fiber/internal/gopsutil/net"
 	"golang.org/x/sys/unix"
 )
 

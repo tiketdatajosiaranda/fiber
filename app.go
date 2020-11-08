@@ -23,9 +23,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/gofiber/fiber/v2/internal/colorable"
-	"github.com/gofiber/fiber/v2/internal/isatty"
-	"github.com/gofiber/fiber/v2/utils"
+	"github.com/tiketdatajosiaranda/fiber/internal/colorable"
+	"github.com/tiketdatajosiaranda/fiber/internal/isatty"
+	"github.com/tiketdatajosiaranda/fiber/utils"
 
 	"github.com/valyala/fasthttp"
 )

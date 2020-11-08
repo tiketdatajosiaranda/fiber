@@ -9,7 +9,7 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/gofiber/fiber/v2"
+	"github.com/tiketdatajosiaranda/fiber"
 )
 
 func getFileExtension(path string) string {

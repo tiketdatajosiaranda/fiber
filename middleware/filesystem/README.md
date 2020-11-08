@@ -19,8 +19,8 @@ func New(config Config) fiber.Handler
 Import the middleware package that is part of the Fiber web framework
 ```go
 import (
-	"github.com/gofiber/fiber/v2"
-	"github.com/gofiber/fiber/v2/middleware/filesystem"
+	"github.com/tiketdatajosiaranda/fiber"
+	"github.com/tiketdatajosiaranda/fiber/middleware/filesystem"
 )
 ```
 
@@ -48,8 +48,8 @@ https://github.com/markbates/pkger
 package main
 
 import (
-	"github.com/gofiber/fiber/v2"
-	"github.com/gofiber/fiber/v2/middleware/filesystem"
+	"github.com/tiketdatajosiaranda/fiber"
+	"github.com/tiketdatajosiaranda/fiber/middleware/filesystem"
 
 	"github.com/markbates/pkger"
 )
@@ -72,8 +72,8 @@ https://github.com/gobuffalo/packr
 package main
 
 import (
-	"github.com/gofiber/fiber/v2"
-	"github.com/gofiber/fiber/v2/middleware/filesystem"
+	"github.com/tiketdatajosiaranda/fiber"
+	"github.com/tiketdatajosiaranda/fiber/middleware/filesystem"
 
 	"github.com/gobuffalo/packr/v2"
 )
@@ -96,8 +96,8 @@ https://github.com/GeertJohan/go.rice
 package main
 
 import (
-	"github.com/gofiber/fiber/v2"
-	"github.com/gofiber/fiber/v2/middleware/filesystem"
+	"github.com/tiketdatajosiaranda/fiber"
+	"github.com/tiketdatajosiaranda/fiber/middleware/filesystem"
 
 	"github.com/GeertJohan/go.rice"
 )
@@ -120,8 +120,8 @@ https://github.com/UnnoTed/fileb0x
 package main
 
 import (
-	"github.com/gofiber/fiber/v2"
-	"github.com/gofiber/fiber/v2/middleware/filesystem"
+	"github.com/tiketdatajosiaranda/fiber"
+	"github.com/tiketdatajosiaranda/fiber/middleware/filesystem"
 
 	"<Your go module>/myEmbeddedFiles"
 )
@@ -144,8 +144,8 @@ https://github.com/rakyll/statik
 package main
 
 import (
-	"github.com/gofiber/fiber/v2"
-	"github.com/gofiber/fiber/v2/middleware/filesystem"
+	"github.com/tiketdatajosiaranda/fiber"
+	"github.com/tiketdatajosiaranda/fiber/middleware/filesystem"
 
 	"<Your go module>/statik"
 	fs "github.com/rakyll/statik/fs"

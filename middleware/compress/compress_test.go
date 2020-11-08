@@ -7,8 +7,8 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/gofiber/fiber/v2"
-	"github.com/gofiber/fiber/v2/utils"
+	"github.com/tiketdatajosiaranda/fiber"
+	"github.com/tiketdatajosiaranda/fiber/utils"
 )
 
 var filedata []byte

@@ -6,7 +6,7 @@ import (
 	"context"
 	"unsafe"
 
-	"github.com/gofiber/fiber/v2/internal/gopsutil/common"
+	"github.com/tiketdatajosiaranda/fiber/internal/gopsutil/common"
 	"golang.org/x/sys/windows"
 )
 

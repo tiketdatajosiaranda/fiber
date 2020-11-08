@@ -10,11 +10,11 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/gofiber/fiber/v2"
-	"github.com/gofiber/fiber/v2/internal/bytebufferpool"
-	"github.com/gofiber/fiber/v2/internal/colorable"
-	"github.com/gofiber/fiber/v2/internal/fasttemplate"
-	"github.com/gofiber/fiber/v2/internal/isatty"
+	"github.com/tiketdatajosiaranda/fiber"
+	"github.com/tiketdatajosiaranda/fiber/internal/bytebufferpool"
+	"github.com/tiketdatajosiaranda/fiber/internal/colorable"
+	"github.com/tiketdatajosiaranda/fiber/internal/fasttemplate"
+	"github.com/tiketdatajosiaranda/fiber/internal/isatty"
 	"github.com/valyala/fasthttp"
 )
 

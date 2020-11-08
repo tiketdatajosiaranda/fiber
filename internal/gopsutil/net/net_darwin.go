@@ -6,7 +6,7 @@ import (
 	"context"
 	"errors"
 	"fmt"
-	"github.com/gofiber/fiber/v2/internal/gopsutil/common"
+	"github.com/tiketdatajosiaranda/fiber/internal/gopsutil/common"
 	"os/exec"
 	"regexp"
 	"strconv"

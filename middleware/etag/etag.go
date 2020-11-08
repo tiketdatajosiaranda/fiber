@@ -4,8 +4,8 @@ import (
 	"bytes"
 	"hash/crc32"
 
-	"github.com/gofiber/fiber/v2"
-	"github.com/gofiber/fiber/v2/internal/bytebufferpool"
+	"github.com/tiketdatajosiaranda/fiber"
+	"github.com/tiketdatajosiaranda/fiber/internal/bytebufferpool"
 )
 
 // Config defines the config for middleware.

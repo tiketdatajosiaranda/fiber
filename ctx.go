@@ -9,7 +9,7 @@ import (
 	"encoding/xml"
 	"errors"
 	"fmt"
-	"github.com/gofiber/fiber/v2/internal/fwd"
+	"github.com/tiketdatajosiaranda/fiber/internal/fwd"
 	"io"
 	"mime/multipart"
 	"net/http"
@@ -21,10 +21,10 @@ import (
 	"text/template"
 	"time"
 
-	"github.com/gofiber/fiber/v2/internal/bytebufferpool"
-	"github.com/gofiber/fiber/v2/internal/encoding/json"
-	"github.com/gofiber/fiber/v2/internal/schema"
-	"github.com/gofiber/fiber/v2/utils"
+	"github.com/tiketdatajosiaranda/fiber/internal/bytebufferpool"
+	"github.com/tiketdatajosiaranda/fiber/internal/encoding/json"
+	"github.com/tiketdatajosiaranda/fiber/internal/schema"
+	"github.com/tiketdatajosiaranda/fiber/utils"
 	"github.com/valyala/fasthttp"
 )
 
